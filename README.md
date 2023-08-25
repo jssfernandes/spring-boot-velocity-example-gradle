@@ -1,0 +1,1 @@
+# spring-boot-velocity-example-gradle
