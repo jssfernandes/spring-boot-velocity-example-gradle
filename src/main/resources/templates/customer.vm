@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      div {
+        width:54%;
+        height:100%;
+        background-color:#ffffff;
+        border: 1px solid #000000;
+        border-radius: 10px;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      table {
+        font-family: arial, sans-serif;
+        border-collapse: collapse;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      td, th {
+        border: 1px solid #dddddd;
+        text-align: left;
+        padding: 8px;
+      }
+
+      tr:nth-child(even) {
+        background-color: #dddddd;
+      }
+    </style>
+  </head>
+  <body>
+  <div>
+    <p>Hello, this is a list of customers</p>
+    <table>
+      <tr>
+        <th>Fist Name</th>
+        <th>Last Name</th>
+        <th>Gender</th>
+        <th>E-mail</th>
+      </tr>
+      #foreach($customer in $customers)
+        <tr>
+          <td>$customer.firstName</td>
+          <td>$customer.lastName</td>
+          <td>$customer.gender</td>
+          <td>$customer.email</td>
+        </tr>
+      #end
+    </table>
+    <br>
+  </div>
+  </body>
+</html>

@@ -1,23 +1,4 @@
-# velocity-example
-Velocity example with springboot 2.7.10
-
-### Motivações
-A criação desse repositório foi para manter atualizável as aplicações com ***springboot*** que utilizam o ***Velocity*** como ***Template Engine***, 
-pois o mesmo foi descontinuado pela pivotal.
-
-### Dependências
-as dependencias utilizadas foram:
-
-- org.springframework.boot:spring-boot-starter-web:2.7.10
-- org.apache.velocity:velocity-engine-core:2.3
-- org.apache.velocity.tools:velocity-tools-generic:3.1
-- org.apache.velocity.tools:velocity-tools-view:3.1
-
-### Configurações
-Para utilizar o mesmo foi necessário criar uma classe de configuração
-
-```VelocityConfiguration.java
-package br.com.spring.velocity.example;
+package br.com.spring.velocity.example.configs;
 
 import org.apache.velocity.app.VelocityEngine;
 import org.apache.velocity.runtime.RuntimeConstants;
@@ -55,12 +36,4 @@ public class VelocityConfiguration implements WebMvcConfigurer {
         viewResolver.setContentType("text/html;charset=UTF-8");
         return viewResolver;
     }
-
 }
-```
-
-E a criação de uma ***ViewResolver***, a classe ***SpringVelocityViewResolver***
-
-[Link SpringVelocityViewResolver.java](/SpringVelocityViewResolver.java)
-
-Basicamente a inner class ***SpringVelocityView*** faz a renderização do template no metodo ***render***
