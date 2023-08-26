@@ -61,6 +61,6 @@ public class VelocityConfiguration implements WebMvcConfigurer {
 
 E a criação de uma ***ViewResolver***, a classe ***SpringVelocityViewResolver***
 
-[Link SpringVelocityViewResolver.java](/SpringVelocityViewResolver.java)
+[Link SpringVelocityViewResolver.java](https://github.com/jssfernandes/spring-boot-velocity-example-gradle/blob/main/src/main/java/br/com/spring/velocity/example/configs/SpringVelocityViewResolver.java)
 
 Basicamente a inner class ***SpringVelocityView*** faz a renderização do template no metodo ***render***
